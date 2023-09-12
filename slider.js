@@ -3,7 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
         type: 'loop',
         perPage: 3,
         label: 'My AI art Gallery',
-        slideFocus: true
+        slideFocus: true,
+        breakpoints: {
+            1506: {
+                perPage: 2,
+            },
+            900: {
+                perPage: 1,
+            }
+        },
     });
     splide.mount();
 });

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
     <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
@@ -15,6 +17,9 @@
     <link rel="stylesheet" href="./slider.css">
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./hover_icrease.css">
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.120.1/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.120.1/examples/jsm/" } }
+    </script>
 
     <style>
         body {
@@ -80,10 +85,13 @@
                 <span class="c_white">DEVE</span>
                 <span class="c_red">LOPER</span>
             </p>
-            <p class="text c_white text_hero">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. </p>
+            <p class="text c_white text_hero">
+                I have been actively involved in the technology industry for more than three years as an enthusiastic and committed enthusiast. I first worked as a freelancer, developed my abilities, and eventually moved into a full-time position as a front-end developer
+                at Grey. In this position, I've had the honor of managing and creating cutting-edge user interfaces for clients using Node.js and technologies like Divi Theme Builder and WordPress. My constant attempts to improve web3 animations and advance
+                my skills in order to satisfy the constantly changing requirements of the digital landscape demonstrate my dedication to staying at the cutting edge of technology. Beyond my work, I've started my own tech startup with a community safety
+                focus. We use our app to notify both the local community and the appropriate local authorities about potential incidents, demonstrating my commitment to using technology for social good.</p>
             <div class="btn_holder">
-                <a href="" class="btn bg_orange">CONTACT ME</a>
+                <a href="#contact_me" class="btn bg_orange">CONTACT ME</a>
             </div>
         </div>
         <div class="hero_second">
@@ -101,7 +109,10 @@
                 <div class="img_wrapper">
                     <img src="./images/work/3d_stuff.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a target="_blank" href="https://mthobisi-za.github.io/3d-stuff" style="text-decoration: none;">
+                            <div class="btn bg_orange">View</div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -111,7 +122,9 @@
                 <div class="img_wrapper">
                     <img src="./images/work/adventure.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a style="text-decoration: none;" target="_blank" href="https://mthobisi-za.github.io/flxr/">
+                            <div class="btn bg_orange">View</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -121,7 +134,10 @@
                 <div class="img_wrapper">
                     <img src="./images/work/furniture.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a style="text-decoration: none;" target="_blank" href="https://mthobisi-za.github.io/furniture/">
+                            <div class="btn bg_orange">View</div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -131,7 +147,10 @@
                 <div class="img_wrapper">
                     <img src="./images/work/kst.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a target="_blank" style="text-decoration: none;" href="https://annualreportskst.co.za/">
+                            <div class="btn bg_orange">View</div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -141,7 +160,10 @@
                 <div class="img_wrapper">
                     <img src="./images/work/tabulio.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a target="_blank" href="https://mthobisi-za.github.io/sexy_site/" style="text-decoration: none;">
+                            <div class="btn bg_orange">View</div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -151,7 +173,10 @@
                 <div class="img_wrapper">
                     <img src="./images/work/webno.png" alt="">
                     <div class="btn_wrapper_long">
-                        <div class="btn bg_orange">View</div>
+                        <a target="_blank" href="https://mthobisi-za.github.io/webnode/" style="text-decoration: none;">
+                            <div class="btn bg_orange">View</div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -204,7 +229,7 @@
             </div>
         </section>
     </div>
-    <div class="contact_section">
+    <div class="contact_section" id="contact_me">
         <p class="subtitle_v2">
             <span class="c_red">CONTACT</span>
             <span class="c_white">ME</span>
@@ -231,6 +256,12 @@
             </div>
         </div>
     </div>
+    <!-- <div class="model">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+        <model-viewer id="change-speed" style="width: 400px;height: 400px;" src="./3d/scene.gltf" camera-controls alt="boat" animation-name="Flying_Fixed">
+        </model-viewer>
+    </div> -->
     <div class="footer">
         <div class="footerr">
             <div class="footer_item1">
@@ -272,5 +303,9 @@
 <script src="./hero_animations.js "></script>
 <script src="./slider.js "></script>
 <script src="./email.js"></script>
+<!-- <script type="module">
+    const modelViewer = document.querySelector('#change-speed'); const speeds = [0.5, 1, 0.5, 0.1]; let i = 0; const play = () => { modelViewer.timeScale = speeds[i++%speeds.length]; modelViewer.play({repetitions: 1}); }; modelViewer.addEventListener('load',
+    play); modelViewer.addEventListener('finished', play);
+</script> -->
 
 </html>
