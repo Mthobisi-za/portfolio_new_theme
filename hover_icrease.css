@@ -1,0 +1,9 @@
+.btn {
+    transition: 1s;
+}
+
+.btn:hover {
+    font-size: 30px;
+    color: #263745;
+    cursor: pointer;
+}
