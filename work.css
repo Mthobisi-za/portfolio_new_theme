@@ -1,0 +1,35 @@
+.work_section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    row-gap: 40px;
+}
+
+.flex_one,
+.flex_two,
+.flex_three {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.column {
+    background-color: #dedede;
+}
+
+@media (max-width:500px) {
+    .work_section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        row-gap: 10px;
+        margin-top: 10px;
+    }
+}

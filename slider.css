@@ -1,0 +1,86 @@
+.slider_container {
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    margin: auto;
+}
+
+
+/* contact section */
+
+.contact_section {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.subtitle_v2 {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Cartonnage OT', sans-serif;
+    line-height: 110%;
+    padding: 0;
+    display: inline-block;
+    display: block;
+    /* margin-top: -100px; */
+}
+
+.form {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40vh;
+}
+
+.form input {
+    border: #FA5F46 2px solid;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #fa5e46a0;
+    font-weight: bold;
+    outline: none;
+    width: 100%;
+}
+
+.form input::placeholder {
+    color: #fa5e46a0;
+}
+
+.form input:focus {
+    border: #FA5F46 2px solid;
+    outline: none;
+}
+
+.btn_holder {
+    text-align: center;
+}
+
+.p_btn {
+    width: 50%;
+}
+
+.error {
+    padding-left: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.splide__slide div {
+    width: 100%;
+    height: 400px;
+}
+
+.splide__slide div img {
+    object-fit: cover;
+    border-radius: inherit;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
