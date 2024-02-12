@@ -2,26 +2,31 @@
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 40% 40%;
-    column-gap: 10%;
+    grid-template-columns: 50% 50%;
+    /* column-gap: 10%; */
     min-height: 90vh;
+    padding-top: 50px;
 }
 
 .hero_first,
 .hero_second {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .hero_second {
     align-items: center;
 }
 
+.hero_second.hero_img {
+    width: 100%;
+}
+
 .title {
     font-size: 100px;
     font-family: 'Futura', sans-serif;
-    line-height: 110%;
+    line-height: 100%;
     padding: 0;
     display: inline-block;
     display: block;
@@ -38,7 +43,7 @@
 .subtitle {
     font-size: 100px;
     font-family: 'Cartonnage OT', sans-serif;
-    line-height: 110%;
+    line-height: 100%;
     padding: 0;
     display: inline-block;
     display: block;
@@ -53,7 +58,83 @@
     width: 0;
 }
 
-@media (max-width:1650px) {
+.text_hero {
+    margin-top: -50px;
+}
+
+
+/* skills */
+
+.skills_grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills_full_container {
+    text-align: left;
+}
+
+.skill_txt {
+    font-size: 30px;
+    font-family: 'Cartonnage OT', sans-serif;
+    line-height: 0px;
+    /* color: #fff; */
+}
+
+.skill_container {
+    background-color: #ddd;
+    border-radius: 30px;
+}
+
+.skills_2 {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    padding-right: 10px;
+    border-radius: 30px;
+    /* width: 90%; */
+    background-color: #FA5F46;
+    font-family: sans-serif;
+}
+
+.wordpress {
+    width: 80%;
+}
+
+.html {
+    width: 100%;
+}
+
+.css {
+    width: 90%;
+}
+
+.react {
+    width: 70%;
+}
+
+.react_native {
+    width: 90%;
+}
+
+.javascript {
+    width: 85%;
+}
+
+.nodejs {
+    width: 70%;
+}
+
+.express_js {
+    width: 65%;
+}
+
+@media (max-width:1342px) {
     .hero_section {
         width: 90%;
         margin: auto;
@@ -62,6 +143,33 @@
         column-gap: 10%;
     }
     .hero_img {
+        width: 60%;
+    }
+    .hero_first {
+        align-items: center;
+    }
+    .text_hero {
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .skills_grid {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10%;
+    }
+    .hero_img {
         width: 100%;
+    }
+    .title,
+    .subtitle {
+        font-size: 70px;
+        line-height: 120%;
+    }
+    .text_hero {
+        text-align: center;
     }
 }

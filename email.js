@@ -85,7 +85,8 @@ function submitEmail() {
             var all_errors = document.querySelectorAll('.error');
             all_errors.forEach(element => {
                 element.innerHTML = '';
-            })
+            });
+            location.reload();
         }, function(error) {
             console.log('FAILED...', error);
         });

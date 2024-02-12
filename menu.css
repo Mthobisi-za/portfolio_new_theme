@@ -1,3 +1,53 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #263745;
+}
+
+.c_white {
+    color: #DEDEDE;
+}
+
+.c_red {
+    color: #FA5F46;
+}
+
+.text {
+    font-size: 18px;
+    font-family: 'Futura', sans-serif;
+}
+
+.bg_orange {
+    background: #FA5F46;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bebas', sans-serif;
+    text-decoration: none;
+    color: #DEDEDE;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn_holder {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn_wrapper_long {
+    width: 90;
+    text-align: center;
+}
+
 .menu {
     min-height: 10vh;
     display: flex;
