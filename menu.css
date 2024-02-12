@@ -4,6 +4,10 @@ body {
     background-color: #263745;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .c_white {
     color: #DEDEDE;
 }
@@ -37,6 +41,7 @@ body {
     min-height: 10vh;
     display: flex;
     align-items: center;
+    column-gap: 10px;
 }
 
 img {
