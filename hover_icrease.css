@@ -1,5 +1,5 @@
 .btn {
-    transition: 1s;
+    transition: .5s ease-in-out;
 }
 
 .btn:hover {

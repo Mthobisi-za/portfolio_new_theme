@@ -62,6 +62,36 @@
     margin-top: -50px;
 }
 
+.latest_work {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    padding-top: 40px;
+    justify-content: stretch;
+}
+
+.latest_work .subtitle {
+    font-size: 40px;
+    color: #ffff;
+    text-align: center;
+}
+
+.l_column {
+    text-align: center;
+}
+
+.l_column img {
+    /* background-image: url('./images/work/anger.png'); */
+    width: 50%;
+}
+
+.l_column p {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
 
 /* skills */
 
@@ -111,11 +141,11 @@
 }
 
 .css {
-    width: 90%;
+    width: 100%;
 }
 
 .react {
-    width: 70%;
+    width: 100%;
 }
 
 .react_native {
@@ -123,15 +153,15 @@
 }
 
 .javascript {
-    width: 85%;
+    width: 100%;
 }
 
 .nodejs {
-    width: 70%;
+    width: 100%;
 }
 
 .express_js {
-    width: 65%;
+    width: 100%;
 }
 
 @media (max-width:1342px) {
