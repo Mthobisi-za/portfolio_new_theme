@@ -2,6 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: #263745;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -56,13 +57,139 @@ img {
 .menu {
     min-height: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: #FA5F46 1px solid;
+    position: fixed;
+    width: 100%;
+}
+
+.overlay {
+    min-height: 90vh;
+    position: fixed;
+    /* top: 10vh; */
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* top: 0; */
+    /* z-index: 10; */
+    background-color: #304e5da0;
+    /* filter: blur(10px);
+    -webkit-filter: blur(8px); */
+    z-index: 10;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    display: none;
+}
+
+.mobile-menu {
+    height: 90vh;
+    /* bottom: -10vh;
+    right: 0;
+    
+    top: 10vh; */
+    background-color: #304E5D;
+    float: right;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    width: 50%;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    font-family: 'Bebas', sans-serif;
+    font-size: 20px;
+}
+
+.bg_h {
+    background-color: #304E5D;
+    z-index: 10;
+}
+
+.left_menu {
+    width: 40%;
+}
+
+.right_menu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    column-gap: 30px;
+}
+
+.right_menu a {
+    text-decoration: none;
+    font-family: 'Bebas', sans-serif;
+    font-size: 20px;
 }
 
 .logo {
     font-size: 50px;
     padding-left: 50px;
     font-family: 'Bebas', sans-serif;
+}
+
+.space {
+    min-height: 50px;
+}
+
+.mb_icon {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .desktop {
+        display: none;
+    }
+    .mb_icon {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .animateIn {
+        animation: animate .8s ease-in-out;
+    }
+    .animateInOver {
+        animation: animateOver .8s ease-in-out;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animateOver {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+        right: -50%
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: .8;
+        right: -0%;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        right: 0;
+    }
 }

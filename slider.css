@@ -10,7 +10,8 @@
 
 .contact_section {
     margin-top: 40px;
-    width: 90%;
+    width: 50%;
+    margin: auto;
 }
 
 .subtitle_v2 {
@@ -31,28 +32,28 @@
     grid-template-columns: 100%;
     align-items: center;
     justify-content: space-between;
-    min-height: 40vh;
+    min-height: auto;
 }
 
 .form input {
-    border: #FA5F46 2px solid;
-    border-radius: 30px;
+    border: #FA5F46 0.5px solid;
+    border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     font-size: 20px;
-    color: #fa5e46a0;
+    color: black;
     font-weight: bold;
     outline: none;
     width: 100%;
 }
 
 .form input::placeholder {
-    color: #fa5e46a0;
+    color: rgb(121, 117, 117);
 }
 
 .form input:focus {
-    border: #FA5F46 2px solid;
+    border: #FA5F46 0.5px solid;
     outline: none;
 }
 
@@ -61,7 +62,10 @@
 }
 
 .p_btn {
-    width: 50%;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
 }
 
 .error {

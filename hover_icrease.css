@@ -3,7 +3,7 @@
 }
 
 .btn:hover {
-    font-size: 30px;
+    /* font-size: 30px; */
     color: #263745;
     cursor: pointer;
 }

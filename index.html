@@ -25,19 +25,81 @@
 </head>
 
 <body>
-    <div class="menu">
-        <spa class="logo c_white">MTHO</spa>
+    <div class="menu bg_h">
+        <div class="left_menu">
+            <spa class="logo c_white">MTHO</spa>
+        </div>
+        <div class="right_menu">
+            <a class="c_white desktop" href="/">HOME</a>
+            <a class="c_white desktop" href="#skills">MY SKILLS</a>
+            <a class="c_white desktop" href="#contact_me">CONTACT ME</a>
+            <div class="mb_icon open" onclick="Makechanges('open')"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </div>
+            <div class="mb_icon close" onclick="Makechanges('close')">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FA5F46" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
+            </div>
+        </div>
     </div>
+    <div class="overlay">
+        <div class="mobile-menu">
+            <a class="c_white mb" href="/">HOME</a>
+            <a class="c_white mb" href="#skills">MY SKILLS</a>
+            <a class="c_white mb" href="#contact_me">CONTACT ME</a>
+        </div>
+    </div>
+
     <div class="hero_section">
         <div class="hero_first">
-            <p class="title c_white">FRONT END</p>
+            <p class="title c_white"><span class="c_red">MID</span>
+                <br>FRONTEND</p>
             <p class="subtitle">
-                <span class="c_white">DEVE</span>
-                <span class="c_red">LOPER</span>
+                <span class="c_white">DEVE</span><span class="c_red">LOPER</span>
             </p>
             <p class="text c_white text_hero">
-                As a Front End Developer, I bring a dedicated approach and a proven track record of success, having collaborated with esteemed brands such as Savanna, Hunters, and Volvo on notable campaigns. Additionally, I've showcased my entrepreneurial drive by independently
-                developing and publishing my own app on the Google Play Store, highlighting my versatility and commitment to innovation in the tech industry.</p>
+                I bring websites to life! Mid-level front-end developer with a passion for crafting user-friendly and visually stunning experiences. Im a &#60;proud-nerd/>
+            </p>
+            <div class="socials">
+                <div class="icon">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                        <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                        <path d="M13 11l1.5 6l1.5 -6" />
+                      </svg></a>
+                </div>
+                <div class="icon">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                            <path d="M8 11l0 5" />
+                            <path d="M8 8l0 .01" />
+                            <path d="M12 16l0 -5" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                          </svg>
+                    </a>
+
+                </div>
+                <div class="icon">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
             <div class="btn_holder">
                 <a href="#contact_me" class="btn bg_orange">CONTACT ME</a>
                 <a href="#skills" class="btn bg_orange">MY SKILLS</a>
@@ -45,33 +107,10 @@
         </div>
         <div class="hero_second">
             <!-- <img class="hero_img" src="https://rawcdn.githack.com/Mthobisi-za/portfolio_new_theme/87b08196db4f90c784d2fb05e7c63e2d1cfb1803/images/hero/ideogram%20(1).png" alt=""> -->
-            <img class="hero_img" src="./images/transparent.png" alt="">
+            <img class="hero_img" src="./images/Mtho.png" alt="">
         </div>
     </div>
-    <div class="work">
-        <p class="subtitle_v2">
-            <span class="c_red">LATEST</span>
-            <span class="c_white">WORK</span>
-        </p>
-        <div class="latest_work">
-            <div class="l_column">
-                <p class="subtitle">Savanna AngerManenja<sup>TM</sup> </p>
-                <br> <br> <br>
-                <img src="./images/work/anger.png" alt=""> <br> <br> <br> <br>
-                <p class="text c_white text_hero">1. Led the development of the Anger Manenja campaign website using a modern tech stack: Tailwind CSS for rapid styling, React.js for a dynamic user experience, and Framer Motion for eye-catching animations. <br> <br> 2. Developed business
-                    logic code in JavaScript to ensure smooth functionality of the AI integration with the GEMINI API. <br> <br> 3. Translated design mockups into a pixel-perfect, responsive web experience using HTML, CSS, and FontAwesome for high-quality
-                    icons.</p>
-                <br> <br> <br>
-                <div class="center" style="text-align: center;">
-                    <a target="_blank" href="https://savanna.co.za/angermanenja" class="btn bg_orange">VIEW CAMPAIGN</a>
-                </div>
 
-            </div>
-            <!-- <div class="l_column">
-                <img src="./images/work/anger_m.png" alt="">
-            </div> -->
-        </div>
-    </div>
     <div class="skills" id="skills">
         <p class="subtitle_v2">
             <span class="c_red">MY</span>
@@ -126,10 +165,46 @@
                     <div class="skills_2 express_js">100%</div>
                 </div>
             </div>
-
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">VUE JS</p>
+                <div class="skill_container">
+                    <div class="skills_2 vue_js">80%</div>
+                </div>
+            </div>
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">BOOTSTRAP & TAILWIND CSS</p>
+                <div class="skill_container">
+                    <div class="skills_2 bootstrap">100%</div>
+                </div>
+            </div>
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">REST APIs</p>
+                <div class="skill_container">
+                    <div class="skills_2 rest_apis">100%</div>
+                </div>
+            </div>
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">JQUERY</p>
+                <div class="skill_container">
+                    <div class="skills_2 jquery">100%</div>
+                </div>
+            </div>
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">FIREBASE</p>
+                <div class="skill_container">
+                    <div class="skills_2 firebase">100%</div>
+                </div>
+            </div>
+            <div class="skills_full_container">
+                <p class="skill_txt c_white">GEMINI AI API</p>
+                <div class="skill_container">
+                    <div class="skills_2 gemini">100%</div>
+                </div>
+            </div>
 
         </div>
     </div>
+    <div class="space"></div>
     <p class="subtitle_v2">
         <span class="c_red">MY</span>
         <span class="c_white">WORK</span>
@@ -166,7 +241,7 @@
                 <div class="img_wrapper">
                     <img src="./images/work/kst_v2.png" alt="">
                     <div class="btn_wrapper_long">
-                        <a target="_blank" href="https://65c1de892e5fca4be68d49a2--nimble-bienenstitch-c27933.netlify.app/" style="text-decoration: none;">
+                        <a target="_blank" href="https://2023.annualreportskst.co.za/" style="text-decoration: none;">
                             <div class="btn bg_orange">View</div>
                         </a>
 
@@ -266,6 +341,7 @@
         </div>
 
     </div>
+    <div class="space"></div>
     <div class="slider_container">
         <p class="subtitle_v2">
             <span class="c_red">AI</span>
@@ -410,7 +486,9 @@
             },
         });
         splide.mount();
+
     });
 </script>
+<script src="./menu.js"></script>
 
 </html>

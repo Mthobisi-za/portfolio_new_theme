@@ -25,7 +25,7 @@
     .work_section {
         width: 100%;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 100%!important;
         align-items: center;
         justify-content: space-evenly;
         margin: auto;
